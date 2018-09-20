@@ -1,0 +1,6 @@
+function sd=calculatesd(TestDataset,avg, featureIndex)
+    sd=[];
+    for i=1:size(TestDataset,1)
+        sd=[sd mod(avg(1)-TestDataset(i,featureIndex)) mod(avg(1)-TestDataset(i,featureIndex))]
+    end
+end
